@@ -6,11 +6,11 @@
 
 ##  核心功能與技術亮點
 
-### 1. 三軸運動空間解析 (3-Axis Kinematics Simulation)
+### 1. 三軸運動空間解析
 *   **座標即時追蹤**：透過垂直滑桿佈局精確模擬機器手臂末端（TCP）在空間中的位置。
 *   **距離計算法則**：後台採用歐幾里得距離公式（Euclidean Distance）實作 3D 空間長度計算，偵測手臂伸展之絕對距離。
 
-### 2. 動態安全性警報系統 (Dynamic Safety Alert)
+### 2. 動態安全性警報系統
 *   **限位偵測 (Limit Detection)**：當計算距離超過物理限制（預設 450mm）時，系統會從「SYSTEM READY」狀態立即切換至「LIMIT EXCEEDED」紅色警報模式。
 *   **發光 LED 狀態燈**：使用 WPF `DropShadowEffect` 實作具備發光質感的 LED 指示燈，模擬真實控制箱的物理回饋。
 
@@ -19,7 +19,7 @@
 *   **一鍵復位 (Emergency Reset)**：實作快速歸零功能，模擬生產現場遭遇異常時的緊急重置操作。
 
 ##  開發工具
-*   **Framework**: .NET 6.0 / 7.0 / 8.0 WPF
+*   **Framework**: .NET 8.0 WPF
 *   **Language**: C#
 *   **Layout**: XAML (Grid, UniformGrid, StackPanel)
 *   **Features**: Data Binding, Value Formatting, Dynamic Visual States
